@@ -1,0 +1,10 @@
+.node {
+	fill: red;
+	stroke: blue;
+	stroke-width: 2px;
+}
+
+.link {
+	stroke: green;
+	stroke-width: 2px;
+}
