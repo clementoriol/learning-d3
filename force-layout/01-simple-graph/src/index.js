@@ -43,11 +43,11 @@ const createLink = (container, data) => {
 // Updates
 const updateLink = (link) => {
   link
-    .attr('x1', function(d) { return d.source.x; })
-    .attr('y1', function(d) { return d.source.y; })
-    .attr('x2', function(d) { return d.target.x; })
-    .attr('y2', function(d) { return d.target.y; });
-}
+    .attr('x1', d => d.source.x)
+    .attr('y1', d => d.source.y)
+    .attr('x2', d => d.target.x)
+    .attr('y2', d => d.target.y);
+};
 
 // Create our notes from the data, and appends it to container
 // Note: on invocation, nothing is visible yet. Nodes dont have width and coordinates yet.
@@ -64,7 +64,7 @@ const updateNode = (node) => {
     .attr('r', dimensions.width / 25)
     .attr('cx', d => d.x)
     .attr('cy', d => d.y);
-}
+};
 
 const svg = createSVG();
 const link = createLink(svg, linksData);
