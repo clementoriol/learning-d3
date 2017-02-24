@@ -29,8 +29,11 @@ const linksData = rootData.links(); // Extract links from the root node
 /*
   The linksData is an array of links :
   [
-    source: [Node],
-    target: [Node],
+    {
+      source: [Node],
+      target: [Node],
+    },
+    ...
   ]
 */
 
@@ -116,7 +119,6 @@ const centerForce = forceCenter(dimensions.width / 2, dimensions.height / 2);
  */
 const collideForce = forceCollide(50);
 
-/*
 const simulation = forceSimulation(nodesData) // Create a new simulation. NOTE : the simulation is immediately run
   .force('link', linkForce) // Pass it forces
   .force('center', centerForce)
@@ -126,5 +128,4 @@ const simulation = forceSimulation(nodesData) // Create a new simulation. NOTE :
     updateLink(link);
     updateNode(node);
   });
-*/
 
