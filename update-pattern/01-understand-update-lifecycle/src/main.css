@@ -1,0 +1,11 @@
+text {
+	font: bold 48px monospace;
+}
+
+.enter {
+	fill: blue;
+}
+
+.update {
+	fill: green;
+}
