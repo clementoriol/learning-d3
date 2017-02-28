@@ -1,0 +1,24 @@
+svg {
+	cursor: all-scroll;
+}
+
+.node {
+	fill: red;
+	stroke: blue;
+	stroke-width: 2px;
+	cursor: pointer;
+}
+
+.link {
+	stroke: green;
+	stroke-width: 2px;
+}
+
+body, html {
+	margin: 0;
+	overflow: hidden;
+}
+
+.zoomContainer {
+	cursor: all-scroll;
+}
